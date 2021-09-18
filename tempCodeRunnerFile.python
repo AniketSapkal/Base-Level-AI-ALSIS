@@ -1,0 +1,19 @@
+import pyttsx3
+import os
+import webbrowser
+import pyaudio
+import speech_recognition as r 
+import wikipedia
+import time
+
+engine = pyttsx3.init('sapi5')
+voices =engine.getproperty('voices')
+print(voices[0].id)
+engine.setproperty('voice',voices[0].id)
+
+def speak(audio):
+    engine.say(audio)
+    engine.runAndWait
+
+def if __name__ == "__main__":
+       speak("Als is good boy")    
